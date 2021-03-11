@@ -1,13 +1,10 @@
 package com.example.activitidemo.config;
 
-import com.example.activitidemo.entity.City;
-import com.example.activitidemo.entity.People;
-import com.sun.istack.NotNull;
+import com.example.activitidemo.entity.po.City;
+import com.example.activitidemo.entity.po.People;
 import org.activiti.engine.*;
 import org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.ResourcePatternResolver;

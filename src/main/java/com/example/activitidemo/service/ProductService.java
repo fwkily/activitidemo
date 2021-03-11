@@ -1,7 +1,7 @@
 package com.example.activitidemo.service;
 
 
-import com.example.activitidemo.entity.ProductPO;
+import com.example.activitidemo.entity.po.ProductPO;
 import com.example.activitidemo.es.entity.ProductESPO;
 
 import java.util.List;

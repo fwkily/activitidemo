@@ -1,12 +1,10 @@
 package com.example.activitidemo.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.example.activitidemo.entity.Student;
+import com.example.activitidemo.entity.po.Student;
 import com.example.activitidemo.service.StudentEventRegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 @Service

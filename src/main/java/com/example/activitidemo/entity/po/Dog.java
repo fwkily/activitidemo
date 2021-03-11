@@ -1,4 +1,4 @@
-package com.example.activitidemo.entity;
+package com.example.activitidemo.entity.po;
 
 import lombok.Getter;
 import lombok.Setter;

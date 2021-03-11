@@ -1,4 +1,4 @@
-package com.example.activitidemo.entity;
+package com.example.activitidemo.entity.po;
 
 import lombok.Data;
 import org.springframework.data.elasticsearch.annotations.Document;

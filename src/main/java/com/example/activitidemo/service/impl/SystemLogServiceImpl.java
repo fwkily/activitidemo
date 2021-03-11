@@ -1,7 +1,7 @@
 package com.example.activitidemo.service.impl;
 
 import com.example.activitidemo.dao.SystemLogRepository;
-import com.example.activitidemo.entity.SystemLog;
+import com.example.activitidemo.entity.po.SystemLog;
 import com.example.activitidemo.service.SystemLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

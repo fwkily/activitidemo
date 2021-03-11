@@ -1,6 +1,6 @@
 package com.example.activitidemo.controller;
 
-import com.example.activitidemo.entity.ProductPO;
+import com.example.activitidemo.entity.po.ProductPO;
 import com.example.activitidemo.es.entity.ProductESPO;
 import com.example.activitidemo.service.ProductService;
 import lombok.extern.slf4j.Slf4j;

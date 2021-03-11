@@ -1,34 +1,17 @@
 package com.example.activitidemo;
 
 import com.example.activitidemo.dao.*;
-import com.example.activitidemo.entity.*;
+import com.example.activitidemo.entity.po.*;
 import com.example.activitidemo.service.ProductService;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.engine.spi.SessionFactoryImplementor;
-import org.hibernate.engine.spi.SessionImplementor;
-import org.hibernate.jpa.HibernateEntityManager;
-import org.hibernate.query.NativeQuery;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.jpa.domain.Specification;
-import org.springframework.orm.jpa.EntityManagerHolder;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
-import javax.persistence.criteria.*;
-import java.math.BigInteger;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @SpringBootTest
 class ActivitidemoApplicationTests {

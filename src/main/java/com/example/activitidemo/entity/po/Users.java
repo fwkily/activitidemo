@@ -1,6 +1,4 @@
-package com.example.activitidemo.entity;
-
-import org.springframework.stereotype.Indexed;
+package com.example.activitidemo.entity.po;
 
 import javax.persistence.*;
 

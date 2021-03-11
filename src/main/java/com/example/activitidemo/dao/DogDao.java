@@ -1,6 +1,6 @@
 package com.example.activitidemo.dao;
 
-import com.example.activitidemo.entity.Dog;
+import com.example.activitidemo.entity.po.Dog;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

@@ -1,6 +1,6 @@
 package com.example.activitidemo.service.listener;
 
-import com.example.activitidemo.entity.Student;
+import com.example.activitidemo.entity.po.Student;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;

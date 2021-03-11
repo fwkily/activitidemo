@@ -1,7 +1,7 @@
 package com.example.activitidemo.service.impl;
 
 import com.example.activitidemo.dao.ProductDao;
-import com.example.activitidemo.entity.ProductPO;
+import com.example.activitidemo.entity.po.ProductPO;
 import com.example.activitidemo.es.dao.ProductESDao;
 import com.example.activitidemo.es.entity.ProductESPO;
 import com.example.activitidemo.exception.BusiEnum;

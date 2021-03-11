@@ -1,8 +1,8 @@
 package com.example.activitidemo.config;
 
 import com.example.activitidemo.config.annotation.Log;
-import com.example.activitidemo.entity.SystemLog;
-import com.example.activitidemo.entity.Users;
+import com.example.activitidemo.entity.po.SystemLog;
+import com.example.activitidemo.entity.po.Users;
 import com.example.activitidemo.service.SystemLogService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
