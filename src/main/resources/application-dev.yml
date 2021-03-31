@@ -36,9 +36,71 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+    open-in-view: false
   data:
     elasticsearch:
       cluster-name: my-elasticsearch
       cluster-nodes: 192.168.1.165:9300
       repositories.enabled: true
+
+  #整合stream rocketmq
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: 127.0.0.1:9876
+        bindings:
+          outputTX:
+            producer:
+              group: myTXProducerGroup
+              transactional: true
+          inputTX:
+            consumer:
+              broadcasting: false
+          my_input2:
+            consumer:
+              tags: myTag
+              keys: myKey
+      bindings:
+        #消费者
+        input:
+          destination: test-topic
+          contentType: text/plain
+          group: test-group
+        #生产者
+        output:
+          # 指定topic
+          destination: test-topic
+          contentType: text/plain
+          group: test-group
+        #自定义消息1
+        my_input1:
+          destination: test-topic1
+          contentType: text/plain
+          group: test-group1
+        my_output1:
+          # 指定topic
+          destination: test-topic1
+          contentType: text/plain
+          group: test-group1
+        #自定义消息2
+        my_input2:
+          destination: test-topic2
+          contentType: application/json
+          group: test-group2
+        my_output2:
+          # 指定topic
+          destination: test-topic2
+          contentType: application/json
+          group: test-group2
+
+        #事务消息application/json
+        inputTX:
+          destination: TransactionTopic
+          contentType: text/plain
+          group: transaction-group
+        outputTX:
+          # 指定topic
+          destination: TransactionTopic
+          contentType: text/plain
 
